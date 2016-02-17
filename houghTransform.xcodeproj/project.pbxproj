@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42B9995F1C748035006D6CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B9995E1C748035006D6CED /* AppDelegate.swift */; };
+		42B999611C748035006D6CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B999601C748035006D6CED /* ViewController.swift */; };
+		42B999641C748035006D6CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B999621C748035006D6CED /* Main.storyboard */; };
+		42B999661C748036006D6CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B999651C748036006D6CED /* Assets.xcassets */; };
+		42B999691C748036006D6CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B999671C748036006D6CED /* LaunchScreen.storyboard */; };
+		42B9997C1C748130006D6CED /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B999791C7480DF006D6CED /* GPUImage.framework */; };
+		42B9997D1C748351006D6CED /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B999791C7480DF006D6CED /* GPUImage.framework */; };
+		42B9997E1C748351006D6CED /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42B999791C7480DF006D6CED /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42B999831C7485CF006D6CED /* CustomShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42B999821C7485CF006D6CED /* CustomShader.fsh */; };
+		42B999871C748D68006D6CED /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B999861C748D68006D6CED /* screen.png */; };
+		42B9998A1C748F78006D6CED /* LineTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B999891C748F78006D6CED /* LineTest2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42B999761C7480DF006D6CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B999701C7480DE006D6CED /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		42B999781C7480DF006D6CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B999701C7480DE006D6CED /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		42B9997A1C748124006D6CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B999701C7480DE006D6CED /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		42B9997F1C748351006D6CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42B999701C7480DE006D6CED /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42B999811C748351006D6CED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42B9997E1C748351006D6CED /* GPUImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42B9995B1C748035006D6CED /* houghTransform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = houghTransform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B9995E1C748035006D6CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42B999601C748035006D6CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42B999631C748035006D6CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42B999651C748036006D6CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42B999681C748036006D6CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42B9996A1C748036006D6CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B999701C7480DE006D6CED /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+		42B999821C7485CF006D6CED /* CustomShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CustomShader.fsh; path = ../CustomShader.fsh; sourceTree = "<group>"; };
+		42B999861C748D68006D6CED /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
+		42B999891C748F78006D6CED /* LineTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LineTest2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42B999581C748035006D6CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B9997C1C748130006D6CED /* GPUImage.framework in Frameworks */,
+				42B9997D1C748351006D6CED /* GPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42B999521C748035006D6CED = {
+			isa = PBXGroup;
+			children = (
+				42B9995D1C748035006D6CED /* houghTransform */,
+				42B9995C1C748035006D6CED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42B9995C1C748035006D6CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42B9995B1C748035006D6CED /* houghTransform.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42B9995D1C748035006D6CED /* houghTransform */ = {
+			isa = PBXGroup;
+			children = (
+				42B999821C7485CF006D6CED /* CustomShader.fsh */,
+				42B9995E1C748035006D6CED /* AppDelegate.swift */,
+				42B999601C748035006D6CED /* ViewController.swift */,
+				42B999621C748035006D6CED /* Main.storyboard */,
+				42B999651C748036006D6CED /* Assets.xcassets */,
+				42B999861C748D68006D6CED /* screen.png */,
+				42B999671C748036006D6CED /* LaunchScreen.storyboard */,
+				42B9996A1C748036006D6CED /* Info.plist */,
+				42B999891C748F78006D6CED /* LineTest2.png */,
+				42B999701C7480DE006D6CED /* GPUImage.xcodeproj */,
+			);
+			path = houghTransform;
+			sourceTree = "<group>";
+		};
+		42B999711C7480DE006D6CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42B999771C7480DF006D6CED /* libGPUImage.a */,
+				42B999791C7480DF006D6CED /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42B9995A1C748035006D6CED /* houghTransform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B9996D1C748036006D6CED /* Build configuration list for PBXNativeTarget "houghTransform" */;
+			buildPhases = (
+				42B999571C748035006D6CED /* Sources */,
+				42B999581C748035006D6CED /* Frameworks */,
+				42B999591C748035006D6CED /* Resources */,
+				42B999811C748351006D6CED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42B9997B1C748124006D6CED /* PBXTargetDependency */,
+				42B999801C748351006D6CED /* PBXTargetDependency */,
+			);
+			name = houghTransform;
+			productName = houghTransform;
+			productReference = 42B9995B1C748035006D6CED /* houghTransform.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42B999531C748035006D6CED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Robin Malhotra";
+				TargetAttributes = {
+					42B9995A1C748035006D6CED = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7G2XZXD8B4;
+					};
+				};
+			};
+			buildConfigurationList = 42B999561C748035006D6CED /* Build configuration list for PBXProject "houghTransform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42B999521C748035006D6CED;
+			productRefGroup = 42B9995C1C748035006D6CED /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42B999711C7480DE006D6CED /* Products */;
+					ProjectRef = 42B999701C7480DE006D6CED /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				42B9995A1C748035006D6CED /* houghTransform */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		42B999771C7480DF006D6CED /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 42B999761C7480DF006D6CED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42B999791C7480DF006D6CED /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 42B999781C7480DF006D6CED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42B999591C748035006D6CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B999691C748036006D6CED /* LaunchScreen.storyboard in Resources */,
+				42B999871C748D68006D6CED /* screen.png in Resources */,
+				42B9998A1C748F78006D6CED /* LineTest2.png in Resources */,
+				42B999831C7485CF006D6CED /* CustomShader.fsh in Resources */,
+				42B999661C748036006D6CED /* Assets.xcassets in Resources */,
+				42B999641C748035006D6CED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42B999571C748035006D6CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B999611C748035006D6CED /* ViewController.swift in Sources */,
+				42B9995F1C748035006D6CED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42B9997B1C748124006D6CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = 42B9997A1C748124006D6CED /* PBXContainerItemProxy */;
+		};
+		42B999801C748351006D6CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = 42B9997F1C748351006D6CED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42B999621C748035006D6CED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42B999631C748035006D6CED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42B999671C748036006D6CED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42B999681C748036006D6CED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42B9996B1C748036006D6CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42B9996C1C748036006D6CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42B9996E1C748036006D6CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = houghTransform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeOfRobin.houghTransform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		42B9996F1C748036006D6CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = houghTransform/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codeOfRobin.houghTransform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42B999561C748035006D6CED /* Build configuration list for PBXProject "houghTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B9996B1C748036006D6CED /* Debug */,
+				42B9996C1C748036006D6CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B9996D1C748036006D6CED /* Build configuration list for PBXNativeTarget "houghTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B9996E1C748036006D6CED /* Debug */,
+				42B9996F1C748036006D6CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42B999531C748035006D6CED /* Project object */;
+}
