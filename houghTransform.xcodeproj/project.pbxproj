@@ -405,6 +405,7 @@
 				42B9996F1C748036006D6CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
